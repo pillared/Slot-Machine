@@ -4,7 +4,7 @@ Casino Slot Machine for Web Programming CSC4370
 
 ---
 
-- **Created by:**
+- **aCreated by:**
 
   `Anthony Asilo`
   `Akiva Ochoa`
