@@ -7,13 +7,11 @@ body {
 .full-page-container {
   display: flex;
   flex-direction: column;
-  border: 4px red dashed;
   height: 100%;
 }
 
 .main-title {
   display: flex;
-  border: 2px green dashed;
   text-align: center;
   justify-content: center;
   color: lightgray;
@@ -21,25 +19,21 @@ body {
 .main-container {
   display: flex;
   flex-direction: row;
-  border: 2px blue dashed;
   height: 100%;
 }
 
 .left {
   width: 20%;
-  border: 3px yellow solid;
 }
 
 .center {
   display: flex;
   width: 60%;
-  border: 2px pink dashed;
   height: 100%;
 }
 .right {
   display: flex;
   width: 20%;
-  border: 2px rgb(9, 255, 0) solid;
 }
 
 .slot-machine {
@@ -48,14 +42,12 @@ body {
   margin-bottom: 5%;
   width: 70%;
   flex-direction: column;
-  border: 2px white solid;
 }
 .handle-container {
   width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px orange dashed;
 }
 .handle {
   border: 5px magenta dashed;
@@ -67,7 +59,6 @@ body {
 .top-center-slot-container {
   flex-direction: row;
   justify-content: center;
-  border: 1px teal dashed;
   height: 25%;
 }
 .top-center-slot {
@@ -84,7 +75,6 @@ body {
 }
 .upper-center-slot-container {
   flex-direction: row;
-  border: 1px aquamarine dashed;
   height: 41%;
 }
 .upper-center-slot {
@@ -101,7 +91,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px teal dashed;
   height: 16%;
 }
 .lower-center-slot {
@@ -110,6 +99,7 @@ body {
   flex-direction: row;
   border: 10px #303030 solid;
   margin: 0 0 0 14%;
+  width: 72%;
   text-align: center;
   align-items: center;
   background-color: rgb(111, 0, 0);
@@ -143,7 +133,6 @@ body {
 .bottom-center-slot-container {
   flex-direction: row;
   justify-content: center;
-  border: 1px aquamarine dashed;
   height: 16%;
 }
 .bottom-center-slot {
