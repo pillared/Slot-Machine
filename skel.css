@@ -1,0 +1,239 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: black;
+  border: 3px dashed green;
+  
+}
+.full-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 3px dashed red;
+}
+
+.main-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 3px dashed blue;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  border: 3px dashed yellow;
+}
+
+.left {
+  width: 20%;
+  border: 3px dashed aqua;
+}
+
+.center {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  border: 3px dashed orange;
+}
+.right {
+  display: flex;
+  width: 20%;
+  border: 3px dashed pink;
+}
+
+.slot-machine {
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 70%;
+  flex-direction: column;
+  border: 3px dashed purple;
+}
+.handle-container {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px blue dashed;
+}
+.handle {
+  border: brown 2px dashed;
+  width: 10%;
+  height: 40%;
+  margin-top: 45%;
+  
+}
+
+
+
+.top-center-slot-container {
+  flex-direction: row;
+  justify-content: center;
+  height: 25%;
+  border: 3px dashed magenta;
+}
+.top-center-slot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20%;
+  text-align: center;
+  align-items: center;
+  height: 96%;
+  border: 3px dashed antiquewhite;
+}
+
+
+
+
+.top-center-slot h1{
+}
+
+.top-center-slot h2{
+}
+
+
+.top-center-slot h3{
+}
+
+
+.upper-center-slot-container {
+  flex-direction: row;
+  height: 41%;
+  border: 3px dashed royalblue;
+}
+.upper-center-slot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 10px #303030 solid;
+  margin: 0 17%;
+  text-align: center;
+  align-items: center;
+  height: 90%;
+  border: 3px dashed lime;
+}
+.lower-center-slot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 16%;
+  border: 3px dashed goldenrod;
+}
+.lower-center-slot {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 3px #303030 dashed;
+  margin: 0 0 0 14%;
+  width: 72%;
+  text-align: center;
+  align-items: center;
+  height: 90%;
+}
+.left-button {
+  display: flex;
+  border: 2px #303030 solid;
+  width: 10%;
+  height: 40%;
+  margin: 0 10px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 6pt;
+}
+.right-button {
+  float: right;
+  display: flex;
+  border: 2px #303030 solid;
+  width: 10%;
+  height: 40%;
+  margin: 0 10px 0 40px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 6pt;
+}
+.bottom-center-slot-container {
+  flex-direction: row;
+  justify-content: center;
+  height: 16%;
+  border: 3px dashed hotpink;
+}
+.bottom-center-slot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 10px #303030 solid;
+  margin: 0 20%;
+  text-align: center;
+  align-items: center;
+  height: 85%;
+  border: 3px dashed paleturquoise;
+}
+
+.center-screen-cage{
+  display: flex;
+  justify-content: center;
+  border: grey 4px dashed;
+  width: 90%;
+  height: 73%;
+}
+
+.center-screen-cover{
+  border: 3px dashed blueviolet;
+  width: 96%;
+  height: 93%;
+  margin-top: 6px;
+}
+.center-screen{
+  border: gray 4px dashed;
+  display: flex;
+  flex-direction: row;
+  width: 97%;
+  height: 94%;
+  background-color: #FFFFFF;
+}
+
+.arrow{
+  height: 25%;
+  align-items: center;
+  justify-items: center;
+  border: 3px dashed purple;
+}
+
+
+.spinner{
+  display: flex;
+  height: 75%;
+  align-items: center;
+  justify-items: center;
+  border: 3px dashed greenyellow;
+}
+.center-screen-component{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+  border: black 1px solid;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.handle-joint{
+  float: right;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  width: 14%;
+  border: brown 4px dashed;
+  margin: auto;
+}
+.slots{
+	width: 98px;
+	height: 83px;
+}

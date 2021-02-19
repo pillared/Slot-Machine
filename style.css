@@ -2,6 +2,9 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
   color: lightgray;
+  
+}
+.background{
   background-image: url(background.jpg);
 }
 .full-page-container {
@@ -9,11 +12,11 @@ body {
   flex-direction: column;
   height: 100%;
 }
-
 .main-title {
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
   color: lightgray;
 }
 .main-container {
@@ -26,6 +29,12 @@ body {
   width: 20%;
 }
 
+.left dl{
+  font-size: 16pt;
+}
+
+
+
 .center {
   display: flex;
   width: 60%;
@@ -34,6 +43,10 @@ body {
 .right {
   display: flex;
   width: 20%;
+}
+
+.right dl{
+  font-size: 16pt;
 }
 
 .slot-machine {
@@ -48,13 +61,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 2px blue;
 }
 .handle {
-  border: 5px magenta dashed;
-  width: 50%;
+  border: brown 2px solid;
+  background-color: gray;
+  width: 10%;
   height: 40%;
   margin-top: 45%;
+  animation-name: handle-handler;
+  animation-duration: 2s;
+  transform-origin: bottom left;
+  
 }
+
+@-webkit-keyframes handle-handler {
+  0%   {-webkit-transform:rotate(0deg);}
+  50%   {-webkit-transform:rotate(15deg);}
+  100%   {-webkit-transform:rotate(0deg);}
+}
+
 
 .top-center-slot-container {
   flex-direction: row;
@@ -67,12 +93,54 @@ body {
   flex-direction: column;
   box-shadow: 0 0 0 10px #303030;
   outline: dotted 5px white;
+  animation-name: outline;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
   margin: 0 20%;
   background-color: rgb(111, 0, 0);
   text-align: center;
   align-items: center;
   height: 96%;
 }
+
+@-webkit-keyframes outline{
+  0% {outline: dotted 5px white;}
+  25% {outline: dotted 5px yellow;}
+  50% {outline: dotted 5px red;}
+  75% {outline: dotted 5px gold;}
+  100% {outline: dotted 5px blue;}
+}
+
+
+.top-center-slot h1{
+  animation-name: jackpot;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes jackpot{
+  0% {background-color: gold;}
+  25% {background-color: green;}
+  50% {background-color: blue;}
+  75% {background-color: red;}
+  100% {background-color: orange;}
+}
+
+
+.top-center-slot h3{
+  animation-name: jackpot;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.main-table{
+  border: 1px solid white;  
+  }
+
+a{
+  color: gold;
+}
+
 .upper-center-slot-container {
   flex-direction: row;
   height: 41%;
@@ -86,6 +154,7 @@ body {
   text-align: center;
   align-items: center;
   height: 90%;
+  background-color: rgb(111, 0, 0);
 }
 .lower-center-slot-container {
   display: flex;
@@ -130,6 +199,7 @@ body {
   justify-content: center;
   font-size: 6pt;
 }
+
 .bottom-center-slot-container {
   flex-direction: row;
   justify-content: center;
@@ -147,7 +217,7 @@ body {
   height: 85%;
 }
 
-.center-screen-cage {
+.center-screen-cage{
   display: flex;
   justify-content: center;
   border: grey 8px solid;
@@ -155,32 +225,110 @@ body {
   height: 73%;
 }
 
-.center-screen-cover {
+.center-screen-cover{
   box-shadow: 0 0 0 6px red;
   outline: black 6px dashed;
   width: 96%;
   height: 93%;
   margin-top: 6px;
 }
-.center-screen {
+.center-screen{
   border: gray 4px solid;
   display: flex;
   flex-direction: row;
   width: 97%;
   height: 94%;
+  background-color: #FFFFFF;
 }
 
-.center-screen-component {
+.arrow{
+  height: 25%;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.spinner-left{
   display: flex;
+  height: 75%;
+  align-items: center;
+  justify-items: center;
+  animation: test1 forwards;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.spinner-center{
+  display: flex;
+  height: 75%;
+  align-items: center;
+  justify-items: center;
+  animation: test2 forwards;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+.spinner-right{
+  display: flex;
+  height: 75%;
+  align-items: center;
+  justify-items: center;
+  animation: test3 forwards;
+  animation-duration: 7.5s;
+  animation-delay: 1s;
+}
+.center-screen-component1{
+  display: flex;
+  flex-direction: column;
   width: 33%;
   height: 100%;
-  border: white 1px solid;
+  border: black 1px solid;
   align-items: center;
   justify-content: center;
   font-size: 48pt;
+
+
 }
 
-.handle-joint {
+.center-screen-component2{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+  border: black 1px solid;
+  align-items: center;
+  justify-content: center;
+  font-size: 48pt;
+
+}
+
+.center-screen-component3{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 100%;
+  border: black 1px solid;
+  align-items: center;
+  justify-content: center;
+  font-size: 48pt;
+
+  
+}
+
+@keyframes test1{
+  from { transform: rotate(0deg);}
+	to {transform: rotate(2520deg);}
+}
+
+@keyframes test2{
+  from { transform: rotate(0deg);}
+	to { transform: rotate(3510deg);}
+}
+
+@keyframes test3{
+  from { transform: rotate(0deg);}
+	to { transform: rotate(4503deg);}
+}
+
+.handle-joint{
   float: right;
   align-items: center;
   justify-content: center;
@@ -189,4 +337,132 @@ body {
   border: brown 4px solid;
   background-color: gray;
   margin: auto;
+}
+
+.button-press-green:active{
+
+	width:10%;
+	transform: translateY(2px);
+	border-radius: 7px;
+	box-shadow: 0 2px darkgreen;
+}
+.button-green{
+	width:10%;
+	border-radius: 7px;
+	box-shadow: 0px 3px green;
+}
+.button-press-gray:active{
+	width:10%;
+	transform: translateY(2px);
+	border-radius: 7px;
+	box-shadow: 0 2px darkgray;
+}
+.button-gray{
+	width:10%;
+	border-radius: 7px;
+	box-shadow: 0px 3px gray;
+}
+.button-press-blue:active{
+
+	width:10%;
+	transform: translateY(2px);
+	border-radius: 7px;
+	box-shadow: 0 2px darkblue;
+}
+.button-blue{
+	width:10%;
+	border-radius: 7px;
+	box-shadow: 0px 3px blue;
+}
+.rules{
+  text-align: center;
+  font-weight:bold;
+  font-size: 24px;
+  color:gold;
+}
+
+@keyframes auto-press-green{
+	from{
+		transform:translateY(0px);
+		width:10%;
+		border-radius: 7px;
+		box-shadow: 0 3px green;
+	}
+	to{transform: translateY(2px);
+		width:10%;
+		border-radius: 7px;
+		box-shadow: 0 2px darkgreen;
+	}
+}
+@keyframes auto-press-gray{
+	from{
+		transform:translateY(0px);
+		width:10%;
+		border-radius: 7px;
+		box-shadow: 0 3px gray;
+	}
+	to{transform: translateY(2px);
+		width:10%;
+		border-radius: 7px;
+		box-shadow: 0 2px darkgray;
+	}
+}
+@keyframes auto-press-blue{
+	from{
+		transform:translateY(0px);
+		width:10%;
+		border-radius: 7px;
+		box-shadow: 0 3px blue;
+	}
+	to{transform: translateY(2px);
+		width:10%;
+		border-radius: 7px;
+		box-shadow: 0 2px darkblue;
+	}
+}
+
+.auto-press{
+	animation:auto-press-gray;
+	animation-direction:alternate;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 10;
+}
+.auto-press-2{
+	animation:auto-press-green;
+	animation-direction:alternate;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 10;
+	animation-delay:0.9s;
+}
+.auto-press-3{
+	animation:auto-press-blue;
+	animation-direction:alternate;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 10;
+	animation-delay:1.8s;
+}
+.auto-press-4{
+	animation:auto-press-blue;
+	animation-direction:alternate;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 10;
+	animation-delay:2.7s;
+}
+.auto-press-5{
+	animation:auto-press-green;
+	animation-direction:alternate;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 10;
+	animation-delay:3.6s;
+}
+
+
+.img-sml{
+  height: 20px;
+  width: 20px;
 }
