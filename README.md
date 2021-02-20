@@ -35,4 +35,5 @@ To get better at working in a team and learning web programming as well as havin
 
 - **External Links**
 
-  `YouTube Presentation` - https://youtube.com/
+  `index file link` - https://codd.cs.gsu.edu/~aasilo1/WP/PW/01/index.html
+  `YouTube Presentation` - https://www.youtube.com/watch?v=vPsFmsuqll8&feature=emb_logo&ab_channel=TheNocturnalGamblers
